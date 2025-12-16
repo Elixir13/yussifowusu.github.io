@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Geospatial Modeling of Schistosomiasis | Yussif's Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/noscript.css" />
+  </noscript>
+  <style>
+    /* Additional styles for project page consistency */
+    .project-header {
+      padding: 8em 0 4em;
+      text-align: center;
+      background: #f9f9f9;
+    }
+
+    body.dark-mode .project-header {
+      background: #1e1e1e;
+    }
+
+    .project-header h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+
+    body.dark-mode .project-header h1 {
+      color: #e0e0e0;
+    }
+
+    .project-header p {
+      font-size: 1.2em;
+      color: #777;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    body.dark-mode .project-header p {
+      color: #ccc;
+    }
+
+    .project-image {
+      text-align: center;
+      margin: 3em 0;
+    }
+
+    .project-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .tools-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      margin: 2em 0;
+      padding: 0;
+    }
+
+    .tools-list li {
+      background: #4696e5;
+      color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    body.dark-mode .tools-list li {
+      background: #6ab7ff;
+    }
+
+    /* Reuse header animation styles from main page */
+    .major h2 {
+      position: relative;
+      font-size: 2.2em;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #333;
+      margin-bottom: 1.2em;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-15px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    body.dark-mode .major h2 {
+      color: #e0e0e0;
+    }
+
+    .major h2.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .major h2::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -0.6em;
+      width: 60px;
+      height: 4px;
+      background: #4696e5;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 0.6s ease-out 0.3s, width 0.6s ease-out 0.3s;
+    }
+
+    body.dark-mode .major h2::after {
+      background: #6ab7ff;
+    }
+
+    .major h2.visible::after {
+      opacity: 1;
+      width: 120px;
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+
+  <!-- TOP NAVIGATION BAR -->
+  <nav id="topnav">
+    <div class="inner">
+      <a href="/index.html" class="logo">YUSSIF</a>
+      <ul class="links">
+        <li><a href="/index.html#header" class="scrolly">Home</a></li>
+        <li><a href="/index.html#about_me" class="scrolly">About</a></li>
+        <li><a href="/index.html#publications" class="scrolly">Publications</a></li>
+        <li><a href="/index.html#projects" class="scrolly">Projects</a></li>
+        <li><a href="/index.html#contact" class="scrolly">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon solid fa-moon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <section class="project-header wrapper style2 special">
+    <header class="major">
+      <h1>Geospatial Modeling of Schistosomiasis Transmission Risks</h1>
+      <p>Predictive modeling integrating climate variability, geospatial data, and machine learning to identify
+        high-risk zones in Sub-Saharan Africa under future climate scenarios.</p>
+      <ul class="tools-list">
+        <li>Python</li>
+        <li>GeoPandas</li>
+        <li>Scikit-learn</li>
+        <li>ArcGIS</li>
+        <li>R</li>
+      </ul>
+    </header>
+  </section>
+
+  <!-- Main Content -->
+  <section class="wrapper style2">
+    <div class="inner">
+
+      <header class="major">
+        <h2>Project Overview</h2>
+      </header>
+      <p>This project developed a robust predictive model to forecast schistosomiasis transmission risks, focusing on
+        the impacts of climate change. By combining environmental data (temperature, precipitation, and hydrology) with
+        machine learning algorithms, the model achieved approximately 85% accuracy in identifying high-risk areas.</p>
+
+      <div class="project-image">
+        <img src="/images/pic01_.jpg" alt="Predictive risk map for schistosomiasis in Sub-Saharan Africa" />
+      </div>
+
+      <header class="major">
+        <h2>Methodology</h2>
+      </header>
+      <p>Geospatial data processing was performed using GeoPandas and ArcGIS. Machine learning models (random forests
+        and gradient boosting) were trained with Scikit-learn to incorporate climate projections from multiple
+        scenarios.</p>
+
+      <div class="project-image">
+        <img src="/images/geospatial_analysis.jpg" alt="Geospatial data processing and machine learning workflow" />
+      </div>
+
+      <header class="major">
+        <h2>Results & Visualizations</h2>
+      </header>
+      <p>The model generated interactive risk maps and dashboards, highlighting zones requiring targeted public health
+        interventions and resource allocation.</p>
+
+      <div class="project-image">
+        <img src="/images/risk_dashboard.jpg"
+          alt="Interactive ArcGIS dashboard displaying schistosomiasis risk zones" />
+      </div>
+
+      <header class="major">
+        <h2>Outcomes & Impact</h2>
+      </header>
+      <p>Key findings were presented at the 2024 ASTMH Annual Meeting in collaboration with the WHO Regional Office. The
+        work contributed to evidence-based strategies for schistosomiasis control in climate-vulnerable regions.</p>
+
+      <div class="project-image">
+        <img src="/images/conference_presentation.jpg" alt="Conference presentation at ASTMH 2024" />
+      </div>
+
+      <ul class="actions special" style="text-align: center; margin-top: 3em;">
+        <li><a href="/index.html#projects" class="button primary">Back to Projects</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+    <p class="copyright">&copy; Yussif. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.scrolly.min.js"></script>
+  <script src="/assets/js/browser.min.js"></script>
+  <script src="/assets/js/breakpoints.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <!-- Activate header animations on load -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.querySelectorAll('.major h2').forEach(function (h2) {
+          h2.classList.add('visible');
+        });
+      }, 200);
+    });
+  </script>
+</body>
+
+</html>
